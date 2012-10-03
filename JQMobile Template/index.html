@@ -30,7 +30,7 @@
 <body>
 
 	<div data-role="page">
-         <div data-role="header">
+         <div data-role="header" data-position="fixed">
          	 <h1>My Love Tracker</h1>
          </div> 
          <div data-role="content">
@@ -39,10 +39,17 @@
               <p>image goes here soon</p>		
 
          <div data-role="footer" data-position="fixed">
-     	     <h4>footer</h4>
-         </div>	  
-	</div>
-
+     	         <div data-role="navbar">
+	                <ul>
+		                <li><a href="#a.html">About Page</a></li>
+		                <li><a href="#b.html">Bronze App</a></li>
+	                </ul>
+                 </div><!-- /navbar -->
+         </div><!--/footer-->    
+    </div>
+       <div data-role="page" id="a.html" data-add-back-btn="true" >
+	   <div data-role="page" id="b.html" data-add-back-btn="true" >
+    </div>
 
 	
 
