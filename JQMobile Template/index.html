@@ -33,23 +33,70 @@
          <div data-role="header" data-position="fixed">
          	 <h1>My Love Tracker</h1>
          </div> 
+           <!--Search-->
+         <div data-role="content">  
+         	  <div data-role="fieldcontain">
+                 <label for="search-2">Search:</label>
+                 <input type="search" name="search-2" id="search-2" value="" />
+              </div>
+         </div>     
          <div data-role="content">
-              <p>image goes here soon</p>
-              <p>image goes here soon</p>
-              <p>image goes here soon</p>		
+               <ul data-role="listview">
+               	   <li><a href="#First Met">First Met</a><li>
+               	   <li><a href="#First Date">First Date</a><li>
+               	   <li><a href="#First Kiss">First Kiss</a><li>
+               	   <li><a href="#First Said I Love You">First Said I love you</a><li>
+               	   <li><a href="#Special Moments">Special Moments</a><li>
+               </ul>
+          </div>
 
          <div data-role="footer" data-position="fixed">
      	         <div data-role="navbar">
 	                <ul>
-		                <li><a href="#a.html">About Page</a></li>
-		                <li><a href="#b.html">Bronze App</a></li>
+		                <li><a href="#about" data-icon="info">About Page</a></li>
+		                <li><a href="#bronze" data-icon="star">Bronze App</a></li>             
 	                </ul>
                  </div><!-- /navbar -->
          </div><!--/footer-->    
     </div>
-       <div data-role="page" id="a.html" data-add-back-btn="true" >
-	   <div data-role="page" id="b.html" data-add-back-btn="true" >
+       <div data-role="page" id="about" data-add-back-btn="true" >
+	   <div data-role="page" id="bronze" data-add-back-btn="true" >
     </div>
+
+     <!-- Start of first page About Page-->
+<div data-role="page" id="about">
+
+	<div data-role="header">
+		<h1>About Page</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm first in the source order so I'm shown as the page.</p>		
+		<p>View internal page called <a href="#home">index</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="bronze">
+
+	<div data-role="header">
+		<h1>Bronze App</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
+		<p><a href="#about">Back to foo</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
 
 	
 
