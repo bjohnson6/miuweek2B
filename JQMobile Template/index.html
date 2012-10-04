@@ -28,158 +28,222 @@
 
 </head>
 <body>
+	    <div data-role="page" id="home">
 
-	<div data-role="page" id="home">
          <div data-role="header" data-position="fixed">
          	 <h1>My Love Tracker</h1>
          </div> 
-        
+
          <div data-role="content">
-               <ul data-role="listview" data-filter ="true"> <!--SEARCH-->
-               	   <li data-role="list-divider" >Browse Moments</li>   
+                <ul data-role="listview" data-filter ="true" >
+                <!--Creats A Header Above-->   
+                   <li data-role="list-divider">Browse Moments</li>          
                	   <li><a href="#met">First Met</a></li>
                	   <li><a href="#date">First Date</a></li>
                	   <li><a href="#kiss">First Kiss</a></li>
-               	   <li><a href="#love you">First Said I love you</a></li>
+               	   <li><a href="#loveyou">First said I love you</a></li>
                	   <li><a href="#special moments">Special Moments</a></li>
                </ul>
           </div>
+       	
+          
 
          <div data-role="footer" data-position="fixed">
-     	         <div data-role="navbar">
-	                <ul>
-		                <li><a href="#about" data-icon="info">About Page</a></li>
-		                <li><a href="#bronze" data-icon="star">Bronze App</a></li>             
-	                </ul>
-                 </div><!-- /navbar -->
+     	     <div data-role="navbar">
+	             <ul>
+		            <li><a href="#about" data-icon="info">About Page</a></li>
+		            <li><a href="#news" data-icon="info">News Feed</a></li>
+		      <!--      <li><a href="#bronze" data-icon="star">Bronze App</a></li> -->
+	              </ul>
+             </div><!-- /navbar -->
          </div><!--/footer-->    
-    </div>
-       <div data-role="page" id="about" data-add-back-btn="true" >
+     </div>
+  <!--     <div data-role="page" id="about" data-add-back-btn="true" >
 	   <div data-role="page" id="bronze" data-add-back-btn="true" >
-    </div>
+     </div> -->
 
      <!-- Start of first page About Page-->
-<div data-role="page" id="about">
+<div data-role="page" id="about" data-add-back-btn="true" >
 
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>About Page</h1>
 	</div><!-- /header -->
 
-	<div data-role="content">	
-		<p>I'm first in the source order so I'm shown as the page.</p>		
-		<p>View internal page called <a href="#about">home</a></p>	
+	<div data-role="content">
+        <ul data-role="listview" >
+                <!--Creats A Header Above-->   
+                   <li data-role="list-divider">About My Love Tracker App</li>          
+               	   <li>  My Love Tracker is a fun app made to keep track of all your relationships special moments.</li>
+               	   <li data-role="list-divider">App Created by:</li> 
+               	   <li> Bernice A. Johnson</li>
+               	   <li> Copy right 2012</li>
+               	   <li data-role="list-divider">My Contact Email:</li> 
+               	   <li> bernicejohnson@fullsail.edu</li>
+               	   <li data-role="list-divider">Illustration Credit:</li> 
+               	   <li> istockphoto.com</li>                  
+           </ul>				
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+	             <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+		            <li><a href="index.html-johnson_bernice_project2_MiuA/JQMobile Template" data-icon="grid">Gold App</a></li>
+		            <li><a href="#git" data-icon="info">Git Links</a></li>
+	              </ul>
+             </div><!-- /navbar -->
+         </div><!--/footer-->    
+     </div>
 
-<!-- Start of second page -->
-<div data-role="page" id="bronze">
+<!-- Start of News -->
+<div data-role="page" id="news" data-add-back-btn="true" >
 
-	<div data-role="header">
-		<h1>Bronze App</h1>
+	<div data-role="header" data-position="fixed">
+		<h1>News Feed</h1>
 	</div><!-- /header -->
 
-	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
-		<p><a href="#home">Back to home</a></p>	
-	</div><!-- /content -->
+    <div data-role="content">	
+		<p>All your current memories</p>		
+		</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+	<div data-role="footer" data-position="fixed">
+		 <div data-role="navbar">
+	             <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+	              </ul>
+           </div><!-- /navbar -->
+       </div><!--/footer-->    
+       </div> 
+
+		
 
 <!-- Start of First Met-->
-<div data-role="page" id="met">
+<div data-role="page" id="met" data-add-back-btn="true" >
 
-	<div data-role="header">
+	<div data-role="header"  data-position="fixed">
 		<h1>First Met</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
-		<p><a href="#home">Back to home</a></p>	
+		<p>Where and when we first met!</p>				
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+	<div data-role="footer"  data-position="fixed">
+		<div data-role="navbar">
+	             <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+	              </ul>
+             </div><!-- /navbar -->
+         </div><!--/footer-->    
+     </div>
 
 <!-- Start of First Date-->
-<div data-role="page" id="date">
+<div data-role="page" id="date"  data-add-back-btn="true" >
 
-	<div data-role="header">
+	<div data-role="header"  data-position="fixed" >
 		<h1>First Date</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
-		<p><a href="#home">Back to home</a></p>	
-	</div><!-- /content -->
+		<p>First dates and details!</p>		
+		</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+	<div data-role="footer"  data-position="fixed">
+		<div data-role="navbar">
+	             <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+	              </ul>
+             </div><!-- /navbar -->
+         </div><!--/footer-->    
+     </div>
+		
 
 <!-- Start of First Kiss-->
-<div data-role="page" id="kiss">
+<div data-role="page" id="kiss" data-add-back-btn="true" >
 
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>First Kiss</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
-		<p><a href="#home">Back to home</a></p>	
-	</div><!-- /content -->
+		<p>Want to remember your first smooch? Look here!</p>		
+			</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+	<div data-role="footer" data-position="fixed">
+		 <div data-role="navbar">
+	             <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+	              </ul>
+             </div><!-- /navbar -->
+         </div><!--/footer-->    
+     </div>
 
 <!-- Start of First I love you-->
-<div data-role="page" id="loveyou">
+<div data-role="page" id="loveyou" data-add-back-btn="true" >
 
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>First said I love you</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
-		<p><a href="#home">Back to home</a></p>	
+		<p>First Said I love you!</p>				
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+	<div data-role="footer" data-position="fixed">
+		 <div data-role="navbar">
+	             <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+	              </ul>
+             </div><!-- /navbar -->
+         </div><!--/footer-->    
+     </div>
+
 
 <!-- Start of Special Moments-->
-<div data-role="page" id="special moments">
+<div data-role="page" id="special moments" data-add-back-btn="true" >
 
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>Special Moments</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
-		<p><a href="#home">Back to home</a></p>	
+		<p>All your special moments right here</p>		
+		</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		 <div data-role="navbar">
+	             <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+	              </ul>
+             </div><!-- /navbar -->
+         </div><!--/footer-->    
+     </div>
+		
+ <!-- Start of Git Links-->
+<div data-role="page" id="git" data-add-back-btn="true" >
+
+	<div data-role="header" data-position="fixed">
+		<h1>Git Links</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+          <ul data-role="listview" >
+                <!--Creats A Header Above-->   
+                   <li data-role="list-divider">My Git links below</li>          
+               	   <li><a href="https://github.com/bjohnson6/MIU-week-2-project">Gold App</a></li>
+               	   <li><a href="https://github.com/bjohnson6/miuweek2B">Bronze App</a></li> 	  
+           </ul>		
 	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-
-
-	
+	<div data-role="footer" data-position="fixed">
+		 <div data-role="navbar">
+	             <ul>
+		            <li><a href="#home" data-icon="home">Home</a></li>
+	              </ul>
+             </div><!-- /navbar -->
+         </div><!--/footer-->    
+     </div>
+		
 
 	<!-- JavaScript under here -->
 	 <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
